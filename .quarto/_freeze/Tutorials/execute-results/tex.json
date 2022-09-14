@@ -1,0 +1,16 @@
+{
+  "hash": "f562912bd9f2980139b1452a1bedf49e",
+  "result": {
+    "markdown": "---\ntitle: \"Tutorials\"\nauthor: \"Yu Jin Ressel\"\ndate: \"14 September, 2022\"\nformat:\n  pdf:\n    toc: true\n    number-sections: true\n    colorlinks: true\nexecute: \n  eval: false\n---\n\n\n## REDCap API and REDCapR\n\n### REDCap API \n\nYou have to be the role of project manager in order to use the API tool. You can check your role in the project by clicking the **User Right** button in the Applications panel. If your role in the project is project manager, then the **API** and **API Playground** buttons can be found in the Application panel. Otherwise please contact your REDCap administrator. \n\n![](images/API_screenshot.png){fig-align=\"left\" width=50%}\n\n### Connect to REDCap API\n\nYou can access REDCap data using the API and bring it directly into R for analysis. The R package is [**REDCapR**](https://cran.r-project.org/web/packages/REDCapR/REDCapR.pdf). For using the package, you will need the following information from your specific REDCap project (accessible from the API tool):\n\n* **URL**: *redcap_uri* \n* **API Token**: *You should contact your REDCap administrator to generate the API token. The API token is <span style=\"color:red\">**ONLY**</span> for you and will work <span style=\"color:red\">**ONLY**</span> with one project. This token allows special access to REDCap data and should <span style=\"color:red\">**NOT**</span> be shared with others.*\n* **Fields**: *Any specific fields or records of interest for the extraction*\n\nHere is the R code for extracting all the project information: \n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(REDCapR)\ndf <- redcap_read_oneshot(redcap_uri = uri,\n                          token = token,\n                          fields = 'project')$data\n```\n:::\n\n\nYou can include the R code in your script. The output **df** is a data.frame.\n\n\n",
+    "supporting": [
+      "Tutorials_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": null,
+    "postProcess": false
+  }
+}
