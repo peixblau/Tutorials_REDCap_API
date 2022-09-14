@@ -1,9 +1,9 @@
 {
     "id": "AC41B528",
-    "path": "~/Documents/R_project_YJR/Tutorials/Tutorials.qmd",
+    "path": "~/Documents/GitHub/Tutorials/Tutorials.qmd",
     "project_path": "Tutorials.qmd",
     "type": "quarto_markdown",
-    "hash": "3115149477",
+    "hash": "2615527795",
     "contents": "",
     "dirty": false,
     "created": 1663138369839.0,
@@ -17,16 +17,16 @@
         "docOutlineVisible": "1",
         "rmdVisualCollapsedChunks": "",
         "rmdVisualModeLocation": "61:120",
-        "cursorPosition": "10,15",
-        "scrollLine": "9",
+        "cursorPosition": "8,21",
+        "scrollLine": "0",
         "docOutlineSize": "110"
     },
     "folds": "",
-    "lastKnownWriteTime": 1663148159,
+    "lastKnownWriteTime": 1663150130,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1663148159563,
+    "last_content_update": 1663150130496,
     "read_only": false,
     "read_only_alternatives": []
 }
